@@ -19,7 +19,12 @@
   text-align: right;
 }
 
-.actions button {
+.order-message {
+  text-align: left;
+}
+
+.actions button,
+.order-message button {
   font: inherit;
   cursor: pointer;
   background-color: transparent;
@@ -30,7 +35,9 @@
 }
 
 .actions button:hover,
-.actions button:active {
+.actions button:active,
+.order-message button:hover,
+.order-message button:active {
   background-color: var(--primary-color-maroon-light);
   border-color: var(--primary-color-maroon-light);
   color: var(--primary-color-white);
@@ -43,4 +50,19 @@
 .actions .button {
   background-color: var(--primary-color-maroon);
   color: var(--primary-color-white);
+}
+
+.order-message {
+  display: flex;
+  flex-direction: column;
+}
+
+.order-message span {
+  display: block;
+  margin-bottom: 2rem;
+}
+
+.order-message button {
+  display: flex;
+  align-self: flex-end;
 }
